@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#dark.active{
+background-color: pink;
+}
+.product{
+border: 1px solid #ccc;
+padding: 20px;
+text-align: center;
+}
+.row[class*="col-"]{
+    padding-right:15px ;
+    padding-left: 15px;
+}
+@media (max-width:576px){
+    .row[class*="col-"]{
+        padding-right:0 ;
+        padding-left: 0;
+    }
+}

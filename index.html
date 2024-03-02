@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dark">
+      <button class="btn btn-md btn-success dark" id="dark" type="button"  data-color="#000">
+Dark
+      </button>
+      <button class="btn btn-md btn-success dark" id="dark" type="button"  data-color="red">
+       Red
+              </button>
+              <button class="btn btn-md btn-success dark" id="dark" type="button" data-color="yellow">
+                Yellow
+                      </button>
+                      <button class="btn btn-md btn-success dark" id="dark" type="button"  data-color="blue">
+                     Blue
+                              </button>
+    </div>
+<div class="form py-5  d-flex flex-column  align-items-center">
+    <div class="row">
+        <div class="col-12 py-5">
+            <h1>
+                Add Product
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Id</label>
+              <input type="number" class="form-control" id="id" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="addProduct()">Submit</button>
+          </form>
+    </div>
+</div>
+
+<div class="table py-5">
+ <div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+     
+        </tbody>
+      </table>
+ </div>
+</div>
+<div class="products py-5">
+<div class="container ">
+    <div class="boxs row">
+
+    </div>
+</div>
+</div>
+<div class="cart py-5">
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="t-bod">
+         
+            </tbody>
+          </table>
+     </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <input type="text" id="num">
+      <button type="button" onclick="guessNum()" class="btn btn-success">Guess</button>
+      <p class="result" id="result">
+
+      </p>
+    </div>
+  </div>
+</div>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
