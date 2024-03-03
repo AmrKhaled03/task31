@@ -5,8 +5,10 @@ if(localStorage.getItem("products")===null){
 }else{
     allProducts=JSON.parse(localStorage.getItem("products"));
 }
+     let table=document.querySelector("tbody")  ;
+    table.innerHTML="";
 allProducts.forEach((product) => {
-  let table=document.querySelector("tbody")  ;
+ 
   table.innerHTML +=`
   <tr>
   <td>${product.id}</td>
