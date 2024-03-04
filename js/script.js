@@ -33,7 +33,7 @@ function addProduct(){
     allProducts.push(newProduct);
 localStorage.setItem("products",JSON.stringify(allProducts));
     getAll();
-
+showProducts();
 
 }
 console.log(allProducts);
